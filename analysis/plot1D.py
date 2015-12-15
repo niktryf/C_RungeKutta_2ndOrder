@@ -19,10 +19,6 @@ import matplotlib.pyplot as plt
 ### plot1D loads data from given file - assumes 3 columns (t,x,v).
 #############################################################################
 def plot1D (filename):
-    #Allocate arrays
-    #t = np.zeros(size)
-    #x = np.zeros(size)
-    #v = np.zeros(size)
     
     # Load data
     t,x,v = np.loadtxt(filename, unpack=True)

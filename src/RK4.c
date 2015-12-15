@@ -16,7 +16,8 @@
 /* 
   Force function (enter desired function here).
   Contains k, l, m coefficients, for defining
-  general functions (i.e. F(t, x, v) = kt + lx + mv).
+  general functions (i.e. F(t, x, v) = kt + lx + mv),
+  that may depend on time, position and velocity.
 */
 double F(double t, double x, double v) 
 {
@@ -24,6 +25,7 @@ double F(double t, double x, double v)
   k = 0.0;
   l = 1.0;
   m = 0.1;
+
   return -l*x -m*v;
 }
 
@@ -45,6 +47,9 @@ double rhs(double t, double x, double v)
   t : independent variable
   x : "position" variable
   v : "velocity" variable
+  
+  Returns new, calculated solutions for x and v,
+  nicely packed into a structure.  
 */
 
 struct xv RK4(double t, struct xv old, double h, 
