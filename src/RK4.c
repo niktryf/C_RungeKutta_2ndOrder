@@ -1,7 +1,7 @@
 /*******************************************************************
  *** Runge-Kutta 4th order method for the solution of 
- *** 2nd order ODEs: 
- *** Runge-Kutta method function and "source" function.
+ *** 2nd order ODEs: Runge Kutta method and right-hand-side function,
+ *** along with Force function.
  ***
  ***  Author: Nikos Tryfonidis, November 2015
  *** The MIT License (MIT)

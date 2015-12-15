@@ -2,6 +2,16 @@
  *** Runge-Kutta 4th order method for the solution of 
  *** 2nd order ODEs: main source file.
  *** 
+ *** As usual, the 2nd order ODE is split into two coupled 1st order ODEs,
+ *** which are solved with the Runge-Kutta function:
+ ***
+ ***                                     | x'(t) = v(t)
+ ***              x''(t) = f(t, x, v) -> | 
+ ***                                     | v'(t) = f(t, x, v)
+ *** 
+ ***
+ *** See README.txt for details on compiling and running.
+ ***
  *** Author: Nikos Tryfonidis, November 2015
  *** The MIT License (MIT)
  *** Copyright (c) 2015 Nikos Tryfonidis
